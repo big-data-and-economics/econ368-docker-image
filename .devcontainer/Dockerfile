@@ -3,10 +3,13 @@
 ARG VARIANT="4.3"
 FROM ghcr.io/rocker-org/devcontainer/geospatial:${VARIANT}
 
+# Instasll R packages
 RUN install2.r --error --skipinstalled -n -1 \
     hrbrthemes \
     fontawesome \
     RefManageR \
-    gapminder \
-    apt-get install -y --no-install-recommends libxt6 \
+    gapminder
+
+# Install system packages
+RUN apt-get install -y --no-install-recommends libxt6 \
     && rm -rf /var/lib/apt/lists/*
