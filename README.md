@@ -1,2 +1,3 @@
-# class-docker-image
-Docker image for the course
+# Docker Image
+
+This creates my docker image.
