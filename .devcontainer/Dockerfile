@@ -8,7 +8,9 @@ RUN install2.r --error --skipinstalled -n -1 \
     hrbrthemes \
     fontawesome \
     RefManageR \
-    gapminder
+    gapminder \
+    skimr \
+    causaldata
 
 # Install system packages
 RUN apt-get install -y --no-install-recommends libxt6 \
