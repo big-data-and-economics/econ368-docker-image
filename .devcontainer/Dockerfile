@@ -10,7 +10,10 @@ RUN install2.r --error --skipinstalled -n -1 \
     RefManageR \
     gapminder \
     skimr \
-    causaldata
+    causaldata \
+    tidycensus \
+    fixest \
+    Hmisc
 
 # Install system packages
 RUN apt-get install -y --no-install-recommends libxt6 \
