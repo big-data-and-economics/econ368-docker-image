@@ -18,3 +18,5 @@ RUN install2.r --error --skipinstalled -n -1 \
 # Install system packages
 RUN apt-get install -y --no-install-recommends libxt6 \
     && rm -rf /var/lib/apt/lists/*
+
+RUN git config --global pull.rebase false
